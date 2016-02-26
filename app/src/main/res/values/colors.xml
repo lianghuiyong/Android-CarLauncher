@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="default_deviceinfo_btn_color">#FF0000</color>
+    <color name="default_systemupdata_btn_color">#2B2B2E</color>
+
+    <!-- group button selector-->
+    <color name="groupbutton_checked_color">#FF0000</color>
+    <color name="groupbutton_unchecked_color">#2B2B2E</color>
+
+    <!-- YGPS-->
+    <color name="light_gray">#FF303030</color>
+    <color name="gray">#FF909090</color>
+    <color name="sigview_line_color">#FFDDDDDD</color>
+    <color name="bar_used">#FF00BB00</color>
+    <color name="bar_unused">#FFFFCC33</color>
+    <color name="bar_outline">#FFFFFFFF</color>
+    <color name="sigview_background">#FF222222</color>
+    <color name="grid">#FFDDDDDD</color>
+    <color name="skyview_background">#FF4444DD</color>
+    <color name="sigview_text_color">#FFFFFFFF</color>
+    <color name="skyview_text_color">#FFFFFFFF</color>
+</resources>

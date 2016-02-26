@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="System_version"
+        android:persistent="false"
+        android:title="版本"
+        />
+    <Preference
+        android:key="serial_number"
+        android:persistent="false"
+        android:title="序列号"/>
+    <Preference
+        android:key="IMEI_number"
+        android:persistent="false"
+        android:title="IMEI"/>
+    <Preference
+        android:key="IP_address"
+        android:persistent="false"
+        android:title="IP地址"/>
+</PreferenceScreen>

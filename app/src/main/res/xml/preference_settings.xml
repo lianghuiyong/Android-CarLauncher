@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="setting wifi"
+        android:title="@string/setting_wifi"
+        android:icon="@drawable/ic_settings_wifi" />
+    <Preference
+        android:key="setting network"
+        android:title="@string/setting_network"
+        android:icon="@drawable/ic_settings_network" />
+    <Preference
+        android:key="setting sdcard"
+        android:title="@string/setting_sdcard"
+        android:icon="@drawable/ic_settings_sdcard"/>
+    <Preference
+        android:key="setting app running"
+        android:title="@string/setting_app_running"
+        android:icon="@drawable/ic_settings_app_running"/>
+    <Preference
+        android:key="setting time data"
+        android:title="@string/setting_time_data"
+        android:icon="@drawable/ic_settings_date_time"/>
+</PreferenceScreen>

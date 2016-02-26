@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/pager_main_ui_bg">
+
+    <RelativeLayout
+        app:layout_widthPercent="30%"
+        android:id="@+id/layout_cell_navi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:id="@+id/pager1_btn_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pager1_navi_img_style"/>
+    </RelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/layout_cell_navi"
+        android:layout_toLeftOf="@+id/layout_cell_navi">
+        <LinearLayout
+            android:id="@+id/layout_line1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="33%"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pager1_btn_autoNavi"
+                android:background="@drawable/pager1_autonavi_img_style"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pager1_btn_edog"
+                android:background="@drawable/pager1_edog_img_style"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pager1_btn_file"
+                android:background="@drawable/pager1_file_img_style"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_line2"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="33%"
+            android:layout_below="@+id/layout_line1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pager1_btn_media"
+                android:background="@drawable/pager1_media_img_style"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pager1_btn_music"
+                android:background="@drawable/pager1_didimusic_img_style"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pager1_btn_fm"
+                android:background="@drawable/pager1_fm_img_style"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="33%"
+            android:layout_below="@+id/layout_line2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pager1_btn_record"
+                    android:background="@drawable/pager1_record_img_style"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pager1_btn_weixin"
+                    android:background="@drawable/pager1_weixinzhushou_img_style"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pager1_btn_settings"
+                    android:background="@drawable/pager1_settings_img_style"
+                    android:layout_weight="1" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <RelativeLayout
+        android:id = "@+id/layout_panel"
+        app:layout_widthPercent="25%"
+        android:layout_height="match_parent"
+        android:background="@drawable/panel_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="23sp"
+            android:text="万里无云"
+            android:id="@+id/text_weather_cond"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="23sp"
+            android:text="深圳 微风"
+            android:id="@+id/text_area_wind"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_weather_cond"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="35dip"
+            android:layout_height="80dip"
+            android:id="@+id/panel_btn_hide"
+            android:background="@drawable/hide_img_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/text_time"
+            android:layout_marginBottom="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/text_data"
+            android:layout_marginBottom="13dp"
+            android:layout_above="@+id/text_time"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/img_weather"
+                android:background="@drawable/weather_0"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:text="23℃"
+                android:id="@+id/text_weather_temp_high"
+                android:layout_below="@+id/text_weather_temp_low"
+                android:layout_toRightOf="@+id/img_weather"
+                android:layout_toEndOf="@+id/img_weather"
+                android:layout_marginTop="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:text="15℃"
+                android:id="@+id/text_weather_temp_low"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_weather"
+                android:layout_toEndOf="@+id/img_weather"
+                android:layout_marginTop="6dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        app:layout_widthPercent = "12.5%"
+        android:layout_height="match_parent"
+        android:id = "@+id/layout_blank_left"
+        android:background="@android:color/black"
+        android:layout_toRightOf="@+id/layout_panel"
+        android:layout_toEndOf="@+id/layout_panel">
+        <ImageButton
+            android:layout_width="35dip"
+            android:layout_height="80dip"
+            android:id="@+id/bl_btn_showpanel"
+            android:background="@drawable/show_img_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_toRightOf="@+id/layout_blank_left"
+        android:layout_toEndOf="@+id/layout_blank_left"
+        android:layout_toLeftOf="@+id/layout_blank_right"
+        android:layout_toStartOf="@+id/layout_blank_right">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/launcher_viewpager"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/layout_blank_right"
+        app:layout_widthPercent = "12.5%"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>
