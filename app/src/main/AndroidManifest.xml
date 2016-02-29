@@ -22,7 +22,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <!--
-        每个activity都必须加上
+        横屏：每个activity都必须加上
         android:screenOrientation="landscape"
         android:configChanges="orientation|screenSize"
     -->
@@ -59,7 +59,7 @@
         <!-- 百度 API-KEY by hxmid -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="nC22d6nYRS3grNiUADmx2IoB" />
+            android:value="***百度KEY添加***" />
 
         <service
             android:name="com.baidu.location.f"
