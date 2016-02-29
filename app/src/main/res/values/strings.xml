@@ -2,8 +2,8 @@
     <string name="app_name">Launcher Didihu</string>
     <string name="device_info">设备信息</string>
     <string name="systemupdata_info">系统更新</string>
-    <string name="txz_sdk_init_app_id">54f42705d7cb0374986718af7c0cbcb5</string>
-    <string name="txz_sdk_init_app_token">d445cbd6a1f35bc2f330ea42ab3cde3ce8842f86</string>
+    <string name="txz_sdk_init_app_id">***同行者app ID添加***</string>
+    <string name="txz_sdk_init_app_token">***同行者Token添加***</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="screen_timeout">Sleep</string>
